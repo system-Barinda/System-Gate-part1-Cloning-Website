@@ -7,8 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-800: oklch(42.4% 0.199 265.638);
@@ -309,9 +307,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -372,12 +367,6 @@
   .h-full {
     height: 100%;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
-  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -408,35 +397,11 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
-  .w-\[\%\] {
-    width: %;
-  }
-  .w-\[0\%\] {
-    width: 0%;
-  }
-  .w-\[07\%\] {
-    width: 07%;
-  }
-  .w-\[8\%\] {
-    width: 8%;
-  }
   .w-\[18\%\] {
     width: 18%;
   }
-  .w-\[40\%\] {
-    width: 40%;
-  }
-  .w-\[48\%\] {
-    width: 48%;
-  }
   .w-\[60\%\] {
     width: 60%;
-  }
-  .w-\[68\%\] {
-    width: 68%;
-  }
-  .w-\[70\%\] {
-    width: 70%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -459,9 +424,6 @@
   .w-\[270px\] {
     width: 270px;
   }
-  .w-\[908\%\] {
-    width: 908%;
-  }
   .w-auto {
     width: auto;
   }
@@ -483,26 +445,17 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .flex-shrink-0 {
     flex-shrink: 0;
   }
   .flex-grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -845,10 +798,6 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -980,11 +929,6 @@
       height: 100%;
     }
   }
-  .md\:h-\[100\] {
-    @media (width >= 48rem) {
-      height: 100;
-    }
-  }
   .md\:h-auto {
     @media (width >= 48rem) {
       height: auto;
@@ -1015,11 +959,6 @@
       width: calc(var(--spacing) * 200);
     }
   }
-  .md\:w-\[9\%\] {
-    @media (width >= 48rem) {
-      width: 9%;
-    }
-  }
   .md\:w-\[48\%\] {
     @media (width >= 48rem) {
       width: 48%;
@@ -1043,11 +982,6 @@
   .md\:w-\[90\%\] {
     @media (width >= 48rem) {
       width: 90%;
-    }
-  }
-  .md\:w-\[95\%\] {
-    @media (width >= 48rem) {
-      width: 95%;
     }
   }
   .md\:w-\[98\%\] {
@@ -1391,11 +1325,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1409,7 +1338,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
