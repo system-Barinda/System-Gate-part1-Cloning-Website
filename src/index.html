@@ -10,15 +10,15 @@
 <body class="m-0 p-0 font-sans">
   <!-- the container all header information -->
 
- <div class="bg-cover bg-center  bg-[url('./images/welcome-homepage-new.jpeg')]">
+ <div class="bg-cover bg-center  bg-[url('./images/welcome-homepage-new.jpeg')] ">
 
 
   <!-- Navbar -->
-  <header class="w-full text-white px-8 py-4 flex items-center justify-between h-20 border-2 gap-3">
+  <header class="w-full text-white px-8 py-4 flex items-center justify-between h-20  gap-3">
    
       <img src="./images/icon-unu.svg" alt="Logo" class="h-10 mr-auto bg-green-400">
     
-    <div class="hidden  flex space-x-4 text-sm ml-auto">
+    <div class="hidden  flex space-x-4 text-sm ml-auto lg:block">
       <a href="#" class="hover:underline">News</a>
       <a href="#" class="hover:underline">Jobs</a>
       <a href="#" class="hover:underline">Donate</a>
@@ -27,15 +27,16 @@
       <a href="#" class="hover:underline">Staff</a>
       <a href="#" class="hover:underline">Students</a>
     </div>
-    <i class="fa fa-search"></i>
-    <i class="fa-solid fa-bars"></i>
+    <div class="lg:hidden">&#9776;</div>
+    <div class="lg:hidden">&#128269;</div>
+     
 
   </header>
  
                     <!-- the sub header menu navbar contain menu -->
     <div class="w-full  text-white px-8 py-4 flex items-center justify-between h-20">
    
-    <nav class="flex space-x-6 text-sm font-medium">
+    <nav class="hidden  flex space-x-6 text-sm font-medium lg:block lg:flex lg:h-10">
         <a href="#" class="hover:underline"><p>Study</p></a>
         <a href="#" class="hover:underline">Student life</a>
         <a href="#" class="hover:underline">Research and innovation</a>
@@ -51,16 +52,16 @@
 
     
     <!-- Overlay box -->
-    <div class="  text-white p-8 max-w-[50%]">
+    <div class="  text-white p-8 max-w-[80%] content-center  ml-10 md:w-[60%]">
       <h1 class="text-4xl font-bold leading-tight border-2">
         YOUR NEXT CHAPTER STARTS NOW
       </h1>
-      <p class="text-lg  border-2 w-[80%]">
+      <p class="text-lg  border-2 w-[80%] md:w-[70%] md:text-lg">
         Welcome to Liverpool! If you're joining us in September, we can't wait to meet you. 
         Find out what you can do now to get ready.
       </p>
-      <a href="#" class="mt-6 inline-block border border-white px-6 py-3 text-base hover:underline transition">
-        Explore our welcome <br> activities →
+      <a href="#" class="mt-6 inline-block border border-white px-6 py-3 text-base hover:underline transition md:">
+        Explore our welcome activities →
       </a>
     </div>
     <!-- the the choose the course and postgraudate and undergraduated -->
@@ -69,29 +70,31 @@
    </div>
 
   <!-- Find Your Course Section -->
-  <section class="bg-[#1e2656] text-white px-16 py-10 ">
-    <div class="flex items-center space-x-4">
+  <section class="bg-[#1e2656] text-white md:px-16 md:py-10 ">
+    <div class="flex flex-col items-start md:items-center space-x-4 ml-5 md:flex md:flex-row">
       <!-- Label -->
-      <span class="font-bold text-lg">Find your course</span>
+      <span class="md:font-bold md:text-lg ">Find your course</span>
 
       <!-- Search Input -->
+       <div class="flex border">
       <input type="text" placeholder="" 
-             class="w-[500px] h-[50px] px-3 text-black border border-blue-400 focus:outline-none bg-white">
-
+             class="w-[400px]  md:w-[500px] h-[50px] px-3 text-black border border-blue-400 focus:outline-none bg-white">
+       <div class="w-20 text-center md:hidden">bb</div>
+       </div>
       <!-- Search Button -->
-      <button class="h-[50px] px-6 border border-white  hover:cursor-pointer transition">
+      <button class="hidden md:block h-[50px] px-6 border border-white  hover:cursor-pointer transition ">
        <p class="hover:underline "> Search</p>
       </button>
 
       <!-- Links -->
-      <div class="flex flex-col ml-4 text-sm">
+      <div class="hidden md:block md:flex-col  text-sm md:flex">
         <a href="#" class="underline hover:underline-offset-2">Courses by A–Z</a>
         <a href="#" class="underline hover:underline-offset-2">Courses by subject</a>
       </div>
     </div>
 
     <!-- Radio Buttons -->
-    <div class="flex space-x-10 mt-8 text-sm  justify-end py-2 w-170 ">
+    <div class="flex flex-col md:flex md:flex-row ml-5 md:ml-5 space-x-10 gap-10 md:space-x-10 mt-8 text-sm  md:justify-end py-2 md:w-170 md:ml-25 ">
       <label class="flex items-center space-x-2 cursor-pointer">
         <input type="radio" name="course" class="w-6 h-6">
         <span>Undergraduate</span>
