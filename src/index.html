@@ -78,7 +78,7 @@
       <!-- Search Input -->
        <div class="flex border">
       <input type="text" placeholder="" 
-             class="w-[290px]  md:w-[500px] h-[50px] px-3 text-black border border-blue-400 focus:outline-none bg-white">
+             class="w-[270px]  md:w-[500px] h-[50px] px-3 text-black border border-blue-400 focus:outline-none bg-white">
        <div class="w-20 text-center md:hidden flex justify-center items-center"><img src="./images/arrow.png" class="h-10 w-10 bg-blue-800"></div>
        </div>
       <!-- Search Button -->
@@ -116,31 +116,31 @@
     <h2 class="text-[38px] font-bold mb-8">Discover the University of Liverpool</h2>
 
     <!-- Content Grid -->
-    <div class="flex space-x-12">
+    <div class="flex flex-col space-x-12 md:flex md:flex-row">
       <!-- Left Image -->
-      <div class="w-[600px]">
-        <img src="../images/contact-us-VGM.jpeg" 
-             alt="University" class="w-full h-auto">
+      <div class="w-[100%] h-[50%]">
+        <img src="./images/contact-us-VGM.jpeg" 
+             alt="University" class="w-full md:h-auto ">
       </div>
 
       <!-- Right Text -->
-      <div class="w-[600px] flex flex-col justify-center">
-        <p class="text-lg leading-relaxed mb-6">
+      <div class="w-[100%] flex flex-col md:h-[60%] md:text-[15px] ">
+        <p class="text-[20px]  md:text-lg md:leading-relaxed mb-6 text-wrap">
           We are the University of Liverpool. Located at the heart of a thrilling world city, we are a dynamic institution 
           of academic excellence and innovation, making a positive impact across the United Kingdom and the wider world.
         </p>
-        <p class="text-lg leading-relaxed mb-8">
+        <p class="text-lg md:leading-relaxed mb-8">
           Since 1881, we've been at the forefront of world-class research and education, known for our cutting-edge 
           facilities and relentless pursuit of excellence and achievement. Find out how you can be part of our vibrant 
           community and explore the work we’re doing with our famous home city.
         </p>
 
         <!-- Buttons -->
-        <div class="flex space-x-6">
-          <a href="#" class="border border-black px-6 py-3 hover:bg-black hover:text-white transition">
+        <div class="flex flex-col space-x-6 gap-3  md:flex md:flex-row md:gap-3 md:space-x-6 ">
+          <a href="#" class="border border-black px-6 py-3 hover:bg-black hover:text-white transition w-full md:w-[90%]">
             Learn about us
           </a>
-          <a href="#" class="border border-black px-6 py-3 hover:bg-black hover:text-white transition">
+          <a href="#" class="border border-black px-6 py-3 hover:bg-black hover:text-white transition w-full">
             Liverpool: Our city, our inspiration
           </a>
         </div>
@@ -149,17 +149,17 @@
   </section>
 
 <!-- Manage your offer -->
-  <div class="bg-pink-500 flex items-center p-4 w-[98%] mx-auto mb-1">
+  <div class="bg-pink-500 flex flex-col items-center p-4 w-[98%] mx-auto mb-1 md:flex md:flex-row">
   <div class="flex-shrink-0 mr-4">
-    <img src="../images/loptop1.png " class="h-30 w-30 bg-white">
+    <img src="./images/loptop1.png " class="h-30 w-30 bg-white">
   </div>
-  <div class=" flex flex-grow text-white gap-x-10">
+  <div class=" flex flex-grow text-white gap-x-10 flex-col  w-[95%] md:flex md:flex-row">
     <h2 class="text-2xl font-bold m-2 self-center">Manage your offer</h2>
-    <p class="text-[28px] w-120 ml-5">Find out how to confirm your place to study at Liverpool and make changes to your offer.</p>
+    <p class="text-[28px] w-90 ml-5 md:w-120">Find out how to confirm your place to study at Liverpool and make changes to your offer.</p>
   </div>
-  <div class="flex-shrink-0">
+  <div class="flex-shrink-0 mt-2 md:ml-2">
     <button class="bg-blue-900 text-white py-3 px-6 text-lg font-semibold">
-      Manage your offer <br> now
+      Manage your offer now
     </button>
   </div>
 </div>
