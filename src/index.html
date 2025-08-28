@@ -6,11 +6,15 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="m-0 p-0 font-sans">
+  <!-- the container all header information -->
+
+ <div class="bg-cover bg-center  bg-[url('../images/background-header.webp')]">
+
 
   <!-- Navbar -->
-  <header class="w-full bg-black text-white px-8 py-4 flex items-center justify-between h-20">
+  <header class="w-full text-white px-8 py-4 flex items-center justify-between h-20">
    
-      <img src="../images/icon-unu.svg" alt="Logo" class="h-10 mr-auto bg-amber-200">
+      <img src="../images/icon-unu.svg" alt="Logo" class="h-10 mr-auto bg-black">
      
     <div class="flex space-x-4 text-sm ml-auto">
       <a href="#" class="hover:underline">News</a>
@@ -24,7 +28,7 @@
   </header>
  
                     <!-- the sub header menu navbar contain menu -->
-    <div class="w-full bg-black text-white px-8 py-4 flex items-center justify-between h-20">
+    <div class="w-full  text-white px-8 py-4 flex items-center justify-between h-20">
    
     <nav class="flex space-x-6 text-sm font-medium">
         <a href="#" class="hover:underline"><p>Study</p></a>
@@ -42,7 +46,7 @@
 
     
     <!-- Overlay box -->
-    <div class="  bg-black/60 text-white p-8 max-w-[50%] border border-black">
+    <div class="  text-white p-8 max-w-[50%]">
       <h1 class="text-4xl font-bold leading-tight border-2">
         YOUR NEXT CHAPTER STARTS NOW
       </h1>
@@ -54,7 +58,53 @@
         Explore our welcome <br> activities →
       </a>
     </div>
-  
+    <!-- the the choose the course and postgraudate and undergraduated -->
+   
+    <br> 
+   </div>
+
+  <!-- Find Your Course Section -->
+  <section class="bg-[#1e2656] text-white px-16 py-10 ">
+    <div class="flex items-center space-x-4">
+      <!-- Label -->
+      <span class="font-bold text-lg">Find your course</span>
+
+      <!-- Search Input -->
+      <input type="text" placeholder="" 
+             class="w-[500px] h-[50px] px-3 text-black border border-blue-400 focus:outline-none bg-white">
+
+      <!-- Search Button -->
+      <button class="h-[50px] px-6 border border-white  hover:cursor-pointer transition">
+       <p class="hover:underline "> Search</p>
+      </button>
+
+      <!-- Links -->
+      <div class="flex flex-col ml-4 text-sm">
+        <a href="#" class="underline hover:underline-offset-2">Courses by A–Z</a>
+        <a href="#" class="underline hover:underline-offset-2">Courses by subject</a>
+      </div>
+    </div>
+
+    <!-- Radio Buttons -->
+    <div class="flex space-x-10 mt-8 text-sm  justify-end py-2 w-170 ">
+      <label class="flex items-center space-x-2 cursor-pointer">
+        <input type="radio" name="course" class="w-6 h-6">
+        <span>Undergraduate</span>
+      </label>
+      <label class="flex items-center space-x-2 cursor-pointer">
+        <input type="radio" name="course" class="w-6 h-6">
+        <span>Postgraduate taught</span>
+      </label>
+      <label class="flex items-center space-x-2 cursor-pointer">
+        <input type="radio" name="course" class="w-6 h-6">
+        <span>Postgraduate research</span>
+      </label>
+    </div>
+  </section>
+
+
+
+    
 
 </body>
 </html>
